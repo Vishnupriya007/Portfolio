@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  align-items: center;
+  width: 1200px;
+}
+
+.image{
+  border-radius: 4px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 10px;
+}
+.main-content {
+  padding: 60px;
+}
+
+.section {
+  margin-bottom: 80px;
+  scroll-margin-top: 40px
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #800080;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.section h3{
+  color: #333;
+}
+
+.section p,
+.section ul {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.section li {
+  margin-bottom: 8px;
+}
+
+/* 🔍 Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-content {
+    padding: 30px 20px;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section h3{
+    font-size: 1.2rem;
+  }
+
+  .section p,
+  .section ul {
+    font-size: 0.95rem;
+  }
+}
+
+.about-image-container {
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #800080;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 480px) {
+  .about-image {
+    width: 120px;
+    height: 120px;
+    border-width: 3px;
+  }
+}
+

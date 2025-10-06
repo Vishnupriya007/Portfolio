@@ -1,0 +1,90 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import './App.css';
+
+function App() {
+  return (
+    <>
+      <Navbar />
+
+      <main className="main-content">
+        <div className="about-image-container"><img
+      src="src/assets/myimage.png" 
+      alt="Vishnupriya"
+      className="about-image"
+    /></div>
+        <section id="about" className="section">
+          <h2>About Me</h2>
+          <p>I am a Java <b>Full stack Developer</b> Based in <b>Chennai</b></p>
+          <p>
+            I'm a proactive and detail-oriented full stack developer with a passion for crafting client-focused applications 
+            and solving complex technical challenges. Whether working independently or as part of a dynamic team, 
+            I thrive in fast-paced environments where thoughtful design and efficient solutions make a real impact.
+             My approach blends creativity with precision, ensuring every project is both functional and user-friendly.
+          </p>
+        </section>
+      <section id="skills"  className="section">
+          <h2 >Skills</h2>
+          <p><b>Java, Spring Boot, Spring Web, Spring Data JPA, React.js, MySQL, Postman, Eureka Server, Python, Data Preprocessing, Data Visualization, Machine Learning Model Building, Model Exporting (Pickle), AWS, Git, HTML, CSS</b></p>
+          
+        </section>
+
+
+        <section id="portfolio"  className="section">
+          <h2 >Experience</h2>
+      
+          <h3>Software Engineer Trainee — Cognizant</h3>
+          <p><strong>September 2024 – Present</strong> • Chennai, TN</p>
+          <p><em>Project: Bayer Appollo LM</em></p>
+          <ul>
+            <li>Delivered client-requested functionality changes, resolved bugs, and optimized backend SQL queries</li>
+            <li>Proposed solutions for production issues and actively participated in code reviews</li>
+            <li>Handled incidents and technical problems using ServiceNow and supported migration activities</li>
+            <li>Conducted performance testing and contributed ideas to enhance application functionality</li>
+            <li>Worked with tools including GitHub, SQL Developer, Splunk, and WebLogic</li>
+          </ul>
+          <h3>Intern — Cognizant</h3>
+          <p><strong>November 2023 – May 2024</strong> • Chennai, TN</p>
+          <p><em>Training & Project: Java Full Stack Development</em></p>
+          <ul>
+            <li>Developed a full-stack project using Spring Boot (backend) and React.js (frontend)</li>
+            <li>Performed CRUD operations with RESTful APIs and conducted API testing using Postman</li>
+            <li>Solved Java programming challenges and passed a HackerRank assessment focused on core Java skills</li>
+            <li>Gained experience converting monolithic applications into microservices architecture</li>
+            <li>Strengthened full-stack development skills through hands-on training and project work</li>
+          </ul>
+        </section>
+        <section id="project" className="section">
+          <h2>Project</h2>
+            <h3>🎟️ Movie Ticket Booking System</h3>
+              <p>
+                A full-stack web application built with <strong>Spring Boot (MVC)</strong> and <strong>React.js</strong>, designed for seamless movie ticket booking.
+              </p>
+              <ul>
+                <li>Integrated <strong>Spring Web</strong>, <strong>Spring Data JPA</strong>, and <strong>Spring Security</strong> for robust backend functionality</li>
+                <li>Used <strong>Eureka Server</strong> and <strong>Open Feign</strong> for microservices architecture</li>
+                <li>Tested APIs with <strong>Postman</strong> for reliable service communication</li>
+              </ul>
+              <h3>🛡️ Web Phishing Detection</h3>
+              <p>
+                A machine learning model built in <strong>Python</strong> to detect phishing websites and enhance cybersecurity.
+              </p>
+              <ul>
+                <li>Preprocessed and visualized data using <strong>Seaborn</strong> and <strong>Matplotlib</strong></li>
+                <li>Applied encoding techniques and trained classification algorithms for accurate detection</li>
+                <li>Exported the model using <strong>Pickle</strong> for integration into web applications</li>
+              </ul>
+          </section>
+
+        <section id="contact" className="section">
+          <h2>Contact</h2>
+          <p>Email: vishnu52756@gmail.com</p>
+          <p>Location: Chennai,TN</p>
+          <p>Mobile: +91 9360684596</p>
+        </section>
+      </main>
+    </>
+  );
+}
+
+export default App;
